@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/todo-crud-react/static/css/main.2dbdfc5b.css",
-    "main.js": "/todo-crud-react/static/js/main.fa16c218.js",
-    "static/js/453.cb1f51c9.chunk.js": "/todo-crud-react/static/js/453.cb1f51c9.chunk.js",
-    "index.html": "/todo-crud-react/index.html",
-    "main.2dbdfc5b.css.map": "/todo-crud-react/static/css/main.2dbdfc5b.css.map",
-    "main.fa16c218.js.map": "/todo-crud-react/static/js/main.fa16c218.js.map",
-    "453.cb1f51c9.chunk.js.map": "/todo-crud-react/static/js/453.cb1f51c9.chunk.js.map"
+    "main.css": "/todoapp/static/css/main.2dbdfc5b.css",
+    "main.js": "/todoapp/static/js/main.0f2097a6.js",
+    "static/js/453.cb1f51c9.chunk.js": "/todoapp/static/js/453.cb1f51c9.chunk.js",
+    "index.html": "/todoapp/index.html",
+    "main.2dbdfc5b.css.map": "/todoapp/static/css/main.2dbdfc5b.css.map",
+    "main.0f2097a6.js.map": "/todoapp/static/js/main.0f2097a6.js.map",
+    "453.cb1f51c9.chunk.js.map": "/todoapp/static/js/453.cb1f51c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2dbdfc5b.css",
-    "static/js/main.fa16c218.js"
+    "static/js/main.0f2097a6.js"
   ]
 }
