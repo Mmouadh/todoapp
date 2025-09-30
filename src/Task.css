@@ -1,0 +1,66 @@
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 1rem 1.5rem;
+  margin: 0.75rem 0;
+
+  background-color: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.task:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* Title */
+.task h1 {
+  flex: 1;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+/* Buttons */
+.task button {
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.9rem;
+  margin-left: 0.4rem;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+
+  border-radius: 8px;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+/* Complete button */
+.task button:first-of-type {
+  background-color: #4caf50;
+  color: white;
+}
+.task button:first-of-type:hover {
+  background-color: #43a047;
+  transform: scale(1.05);
+}
+
+/* Delete button */
+.task button:last-of-type {
+  background-color: #e53935;
+  color: white;
+}
+.task button:last-of-type:hover {
+  background-color: #c62828;
+  transform: scale(1.05);
+}

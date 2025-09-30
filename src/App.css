@@ -1,38 +1,131 @@
-.App {
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Banner full-width */
+.banner {
+  width: 100%;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: #fff;
   text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.5rem 0;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* App container */
+.App {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffffcc;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Add task input + button */
+.addTask {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.addTask input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.addTask input:focus {
+  border-color: #4facfe;
+  outline: none;
+}
+
+.addTask button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #4facfe;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.addTask button:hover {
+  background: #00f2fe;
+  transform: scale(1.05);
+}
+
+/* Task list */
+.list {
   display: flex;
   flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Task card */
+.task {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 12px 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.task:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.task button {
+  border: none;
+  outline: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.task button:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .addTask {
+    flex-direction: column;
+  }
+
+  .addTask input,
+  .addTask button {
+    width: 100%;
+  }
+
+  .banner {
+    font-size: 1.5rem;
+    padding: 1rem 0;
   }
 }
